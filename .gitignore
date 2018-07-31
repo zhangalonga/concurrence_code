@@ -8,5 +8,6 @@ artifacts/*
 .classpath
 .project
 *.iml
+*.patch
 /target/
 /.apt_generated/
