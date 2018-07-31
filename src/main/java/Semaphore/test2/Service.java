@@ -1,4 +1,4 @@
-package Semaphore.test1;
+package Semaphore.test2;
 
 import java.util.concurrent.Semaphore;
 
@@ -7,18 +7,16 @@ import java.util.concurrent.Semaphore;
  */
 public class Service {
 
-    /**
-     * 定义最多一个线程来执行acquire()和release()的代码，3个线程是同步的
-     */
-    private Semaphore semaphore = new Semaphore(1);
+    private Semaphore semaphore = new Semaphore(2);
 
     public void testMethod(){
-        try{
+        try {
             semaphore.acquire();
             System.out.println(Thread.currentThread().getName()+"begin time="+System.currentTimeMillis());
             Thread.sleep(5000);
             System.out.println(Thread.currentThread().getName()+"end time="+System.currentTimeMillis());
-            semaphore.release();
+
+
         }catch (InterruptedException e){
             e.printStackTrace();
         }
