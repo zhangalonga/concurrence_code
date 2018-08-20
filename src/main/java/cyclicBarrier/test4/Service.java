@@ -21,7 +21,8 @@ public class Service {
             if (Thread.currentThread().getName().equals("Thread-2")) {
                 System.out.println("thread-2进来了");
                 Thread.sleep(5000);
-                Integer.parseInt("a");
+                //Integer.parseInt("a");
+                Thread.currentThread().interrupt();
             }
             cbRef.await();
             System.out.println("都到了，开始跑！");
