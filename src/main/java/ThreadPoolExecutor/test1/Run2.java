@@ -14,6 +14,5 @@ public class Run2 {
                 System.out.println("run");
             });
         }
-
     }
 }

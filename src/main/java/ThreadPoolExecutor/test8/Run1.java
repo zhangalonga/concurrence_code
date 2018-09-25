@@ -14,7 +14,7 @@ public class Run1 {
         System.out.println(executor.getCorePoolSize());
         System.out.println(executor.getMaximumPoolSize());
         System.out.println("");
-        executor = new ThreadPoolExecutor(7, 8, 5, TimeUnit.SECONDS, new SynchronousQueue<>());
+        executor = new ThreadPoolExecutor(7, Integer.MAX_VALUE, 5, TimeUnit.SECONDS, new SynchronousQueue<>());
         System.out.println(executor.getCorePoolSize());
         System.out.println(executor.getMaximumPoolSize());
 
