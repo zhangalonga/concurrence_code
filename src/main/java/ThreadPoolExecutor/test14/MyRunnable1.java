@@ -20,4 +20,13 @@ public class MyRunnable1 implements Runnable {
             e.printStackTrace();
         }
     }
+
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 }
