@@ -18,7 +18,8 @@ public class Test {
         try {
             List list = new ArrayList();
             list.add(new MyCallableB());
-            list.add(new MyCallableA());
+            //list.add(new MyCallableA());
+            list.add(new MyCallableA1());
             ExecutorService service = Executors.newCachedThreadPool();
             String v = null;
             v = (String) service.invokeAny(list);
