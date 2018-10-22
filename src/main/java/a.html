@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script>
+        function LineAuth() {
+            var URL = 'https://access.line.me/oauth2/v2.1/authorize?';
+            URL += 'response_type=code';
+            URL += '&client_id=1591667849';
+            URL += '&redirect_uri=https://www.qidian.com/';
+            URL += '&state=abcde';
+            URL += '&scope=openid%20profile';
+            window.location.href = URL;
+        }
+
+    </script>
+</head>
+<body>
+<button onclick="LineAuth()">點選 Line Login</button>
+</body>
+</html>
