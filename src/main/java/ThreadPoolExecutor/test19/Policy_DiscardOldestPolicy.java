@@ -14,7 +14,7 @@ public class Policy_DiscardOldestPolicy {
         ThreadPoolExecutor executor =
                 new ThreadPoolExecutor(2, 3, 5, TimeUnit.SECONDS, queue, new ThreadPoolExecutor.DiscardOldestPolicy());
         for (int i = 0; i < 5; i++) {
-            MyRunnable runnable = new MyRunnable("Runnable" + (i + 1));
+            MyRunnable runnable = new MyRunnable("MyRunnable" + (i + 1));
             executor.execute(runnable);
         }
         Thread.sleep(50);
